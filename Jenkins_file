@@ -7,7 +7,4 @@ node{
        def mvnHome = tool name: 'mavenrepo', type: 'maven'
          sh "${mvnHome}/bin/mvn package"
        }
-       stage('Email Notification'){
-       mail bcc: '', body: 'this is pipeline build', cc: '', from: '', replyTo: '', subject: 'job mails', to: 'harish.mallela445@gmail.com'
-     }
      }
