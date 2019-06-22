@@ -8,6 +8,6 @@ node{
          sh "${mvnHome}/bin/mvn package"
        }
        stage('Email Notification'){
-       mail bcc: '', body: 'hi this is first mail', cc: '', from: '', replyTo: '', subject: 'hi this is first mail', to: 'harish.mallela445@gmail.com' 
+       mail bcc: '', body: 'this is pipeline build', cc: '', from: '', replyTo: '', subject: 'job mails', to: 'harish.mallela445@gmail.com'
      }
      }
